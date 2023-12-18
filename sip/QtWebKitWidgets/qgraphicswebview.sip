@@ -46,7 +46,7 @@ public:
     QWebSettings *settings() const;
     QAction *pageAction(QWebPage::WebAction action) const;
     void triggerPageAction(QWebPage::WebAction action, bool checked = false);
-    bool findText(const QString &subString, QFlags<QWebPage::FindFlag> options = QWebPage::FindFlags());
+    bool findText(const QString &subString, QFlags<QWebPage::FindFlag> options = QFlags<QWebPage::FindFlag>());
     virtual void setGeometry(const QRectF &rect);
     virtual void updateGeometry();
     virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget = 0);

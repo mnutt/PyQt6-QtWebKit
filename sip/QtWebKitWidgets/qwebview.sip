@@ -79,7 +79,7 @@ public:
     bool isModified() const;
     virtual QVariant inputMethodQuery(Qt::InputMethodQuery property) const;
     virtual QSize sizeHint() const;
-    bool findText(const QString &subString, QFlags<QWebPage::FindFlag> options = QWebPage::FindFlags());
+    bool findText(const QString &subString, QFlags<QWebPage::FindFlag> options = QFlags<QWebPage::FindFlag>());
     virtual bool event(QEvent *);
 
 public slots:

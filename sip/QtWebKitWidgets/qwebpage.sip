@@ -175,7 +175,7 @@ public:
     virtual bool event(QEvent *);
     bool focusNextPrevChild(bool next);
     QVariant inputMethodQuery(Qt::InputMethodQuery property) const;
-    bool findText(const QString &subString, QFlags<QWebPage::FindFlag> options = QWebPage::FindFlags());
+    bool findText(const QString &subString, QFlags<QWebPage::FindFlag> options = QFlags<QWebPage::FindFlag>());
     void setForwardUnsupportedContent(bool forward);
     bool forwardUnsupportedContent() const;
     void setLinkDelegationPolicy(QWebPage::LinkDelegationPolicy policy);

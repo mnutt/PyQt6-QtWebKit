@@ -28,8 +28,13 @@ but will allow you to configure many aspects of the installation.
 
 # Building From Source
 
-Building requires `sip`, and for whatever reason requires manually including `printsupport`:
+PyQt6-QtWebKit currently requires a manual build of QtWebKit against 
+[this branch](https://github.com/movableink/webkit/tree/qt6).
+If qtwebkit wasn't installed alongside Qt, you should set QMAKEPATH environment
+variable to where you installed qtwebkit.
+
+Building requires `sip`:
 
 ```
-sip-build --pep484-pyi --verbose --qmake=/usr/lib/qt6/bin/qmake6 --qmake-setting "QT += printsupport"
+sip-build --verbose
 ```

@@ -28,4 +28,4 @@ tag-prefix = "QtWebKit"
 qmake-QT = ["webkit"]
 
 [tool.sip.bindings.QtWebKitWidgets]
-qmake-QT = ["webkitwidgets"]
+qmake-QT = ["webkitwidgets", "printsupport"]
